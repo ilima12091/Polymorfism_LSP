@@ -5,7 +5,7 @@ namespace LSPLibrary
         la solución sería crear una interfaz IEvent para poder crear nuevos eventos.
         No cumple con polymorfism porque no hay forma de crear otro tipo de evento que no sea "severe".
     */
-    public class Event
+    public class Event: IEvent
     {
         public string EventName { get; set; }
         public string EventType { get; set; }
