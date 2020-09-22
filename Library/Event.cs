@@ -1,8 +1,9 @@
 namespace LSPLibrary
 {
     /*
-        No cumple con LSP porque no lo aplica ya que no hay un tipo genérico del cual herede.
-        No cumple con polymorfism porque no hay forma de crear otro tipo de alerta.
+        No cumple con LSP porque si quiero crear un evento nuevo por ejemplo "critical" el programa no ingresaria ese parámetro, 
+        la solución sería crear una interfaz IEvent para poder crear nuevos eventos.
+        No cumple con polymorfism porque no hay forma de crear otro tipo de evento que no sea "severe".
     */
     public class Event
     {
